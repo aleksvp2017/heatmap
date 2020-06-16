@@ -28,7 +28,6 @@ export default {
       this.stateData = {}
       var metricsPorUF = generateMetrics()
       metricsPorUF.map(item => this.stateData['BR-' + item.uf] = item.metric)
-      console.log(this.stateData)
       this.showMap = true
       this.mapkey = this.mapkey + 1
   },
